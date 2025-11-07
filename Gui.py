@@ -58,7 +58,7 @@ if st.button("✨ Generate Summary + Skills"):
                 # -----------------------------
                 # 🎯 Gemini Skill Extraction
                 # -----------------------------
-                with st.spinner("Extracting top 5 skills using Gemini 2.5 Flash..."):
+                with st.spinner("Extracting top 5 skills"):
                     try:
                         prompt = f"Extract the top 5 professional skills from this text:\n\n{summary}\n\nReturn only the skill names, comma-separated."
                         model = genai.GenerativeModel("gemini-2.5-flash")
@@ -83,3 +83,4 @@ if st.button("✨ Generate Summary + Skills"):
 # ----------------------------------
 st.markdown("---")
 st.caption("Built by Tarun Kaushik")
+
